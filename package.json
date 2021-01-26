@@ -1,0 +1,15 @@
+{
+  "name": "challenge_testimonials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "compile:sass": "node-sass sass/main.scss css/main.css"
+  },
+  "author": "Lenka",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,65 @@
+.description {
+    width: 60%;
+    z-index: 10;
+    margin: auto;
+    justify-content: center;
+
+    &_text {
+        color: $--color-primary-blue;
+        font-size: 3.2rem;
+        font-weight: 300;
+        right: -60px;
+        position: relative;
+        z-index: 1;
+    }
+    &_text::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-left: 9rem;
+        margin-top: -5rem;
+        background-image: url(/images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+    }
+    &_name {
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        color: $--color-primary-pale-blue;
+        right: -60px;
+        position: relative;
+        strong {
+            color: $--color-primary-blue;
+        }
+    }
+}
+
+.profile {
+    &__avatar {
+        width: 100%;
+        z-index: -10;
+        box-shadow: 2rem 1rem 3rem 1rem rgba(55, 67, 221, 0.2);
+    }
+}
+
+.arrows {
+    display: flex;
+    position: relative;
+    width: 10rem;
+    border-radius: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5em 0.5rem 0.5rem 1px rgba(77, 17, 17, 0.1);
+    padding: 1.2rem;
+    z-index: 110;
+    justify-content: center;
+    margin-top: -3rem;
+    margin-left: 8rem;
+
+    &__prev {
+        background-repeat: no-repeat;
+        padding-right: 3rem;
+    }
+    &_next {
+        background-repeat: no-repeat;
+    }
+}

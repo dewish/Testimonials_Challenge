@@ -3,8 +3,7 @@ $--color-primary-pale-blue: hsl(240, 18%, 77%);
 $--color-primary-blue: hsl(240, 38%, 20%);
 $--color-white: hsl(0, 0%, 100%);
 // FONT VARIABLES
-$--font-primary: "Inter",
-sans-serif;
+$--font-primary: "Inter", sans-serif;
 //.attribution a {color: hsl(228, 45%, 44%);
 *,
 *::before,
@@ -24,10 +23,7 @@ body {
     line-height: 1.6;
     font-family: $--font-primary;
     min-height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    place-content: center;
+    margin: auto;
     padding: 5rem;
 }
 

@@ -1,31 +1,29 @@
 /* SLIDER */
 
 .slider {
-    position: absolute;
-    top: 20%;
-    width: 140rem;
-    /* IN THE END */
-    // overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 70rem;
+    overflow: hidden;
+    background-image: url(/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    // border: 2px solid rgb(157, 172, 238);
 }
 
 .slide {
     position: absolute;
-    padding: 10rem;
-    width: 100%;
-    background-image: url(/images/pattern-bg.svg);
-    background-repeat: no-repeat;
-    background-position: right;
     display: flex;
+    padding: 8rem;
+
     align-items: center;
     justify-content: center;
     transition: transform 1s;
 }
 
 .testimonial {
-    width: 60%;
+    width: 65%;
     z-index: 10;
-    margin: auto;
-    justify-content: center;
     &__text {
         color: $--color-primary-blue;
         font-size: 3.2rem;
@@ -39,7 +37,6 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        margin-left: 9rem;
         margin-top: -5rem;
         background-image: url(/images/pattern-quotes.svg);
         background-repeat: no-repeat;
@@ -56,18 +53,32 @@
     }
 }
 
-// .slide2 {
-//     display: none;
-// }
 .profile_avatar {
     width: 100%;
     z-index: -10;
     box-shadow: 2rem 1rem 3rem 1rem rgba(55, 67, 221, 0.2);
 }
 
+
+/////////////////////////////////////////////
+//Button outside of the Container
+
+// .buttons {
+//     position: relative;
+//     top: -3rem;
+//     left: 10%;
+//     width: 10rem;
+//     height: 5rem;
+//     border-radius: 5rem;
+//     background-color: $--color-white;
+//     box-shadow: 0.5em 0.5rem 0.5rem 1px rgba(25, 12, 34, 0.1);
+//     overflow: hidden;
+// }
+
+
 .buttons {
     position: absolute;
-    top: 56.5%;
+    top: 59rem;
     left: 58%;
     width: 10rem;
     height: 5rem;
@@ -75,11 +86,11 @@
     background-color: $--color-white;
     box-shadow: 0.5em 0.5rem 0.5rem 1px rgba(25, 12, 34, 0.1);
     overflow: hidden;
-}
+}    
 
 .next::after,
 .prev::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
@@ -115,3 +126,6 @@
     position: absolute;
     cursor: pointer;
 }
+
+//////////////////////////////////
+// Media Queries
